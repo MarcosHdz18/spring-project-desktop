@@ -4,11 +4,16 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--     <bean id="..." class="..."> -->
-<!--     </bean> -->
-
-<!--     <bean id="..." class="..."> -->
-<!--     </bean> -->
+    <bean id="disqueraDAO" class="com.devmark.springprojectdesktop.dao.impl.DisqueraDAOImpl">
+    </bean>
+    
+    <bean id="properties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+    	<property name="locations">
+    		<list>
+    			<value>classpath:application.properties</value>
+            </list>
+        </property>
+    </bean>
 
 </beans>
 
